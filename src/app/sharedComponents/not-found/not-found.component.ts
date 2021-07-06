@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-not-found',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotFoundComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router) { 
+
+    let contador = 5;
+    function contar() {
+        document.getElementById('contador').innerHTML = contador;
+        contador--;
+    }
+    function redirecionar() {
+        contar();
+        if (contador == 0) {
+            document.location.href = '/login';
+        }
+    }
+    setInterval(redirecionar, 1100);
+    
+  }
 
   ngOnInit(): void {
   }
+
 
 }

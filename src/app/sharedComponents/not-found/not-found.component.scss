@@ -1,7 +1,6 @@
 :host{
     display: flex;
     justify-content: center;
-    padding: 100px 0px 0px 0px;
 }
 
 .textoErro, .textoVoltar{
@@ -9,15 +8,21 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16pt;
     line-height: 1.5;
-    
   }
 
-  .textoVoltar a{
-      text-decoration: none;
-  }
-  .textoVoltar a:hover{
-    color: #777;
-    font-weight: bold;
-    text-decoration: none;
-  }
+.textoVoltar a{
+  text-decoration: none;
+}
 
+.textoVoltar a:hover{
+color: #777;
+font-weight: bold;
+text-decoration: none;
+}
+
+.main-section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }

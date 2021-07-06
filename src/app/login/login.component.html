@@ -1,21 +1,20 @@
-<mat-card class="example-card">
-  <div class="divLogo">
-  <img src="../../assets/contactura_logo.png">
-</div>
+<section class="section-container">
+  <mat-card class="example-card">
+      <mat-card-title><span class="logo-span"><img alt="Logo Contactura" src="../../assets/img/contactura_logo.png"></span></mat-card-title>
     <mat-card-content>
-        <form class="example-form">
-            <mat-form-field class="example-full-width">
-              <mat-label>Username</mat-label>
-              <input matInput>
-            </mat-form-field>
-            <br>
+      <form class="example-form">
               <mat-form-field class="example-full-width">
-                <mat-label>Password</mat-label>
-                <input matInput>
-            </mat-form-field>
-        </form>
-    </mat-card-content>
-    <mat-card-actions class="alignButtonsCenter">
-        <button mat-button>Entrar</button>
-    </mat-card-actions>
-  </mat-card>
+                <mat-label>Username</mat-label>
+                <input matInput type="text" required>
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                  <mat-label>Senha</mat-label>
+                  <input matInput type="password" required>
+                </mat-form-field>
+            </form>
+            <div class="container-button-enter">
+              <button mat-raised-button color="accent">Entrar</button>
+            </div>              
+      </mat-card-content>
+    </mat-card>
+</section>
