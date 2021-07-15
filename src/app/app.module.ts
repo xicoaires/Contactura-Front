@@ -13,6 +13,7 @@ import { NotFoundComponent } from './sharedComponents/not-found/not-found.compon
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { MatInputModule } from '@angular/material/input';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatInputModule,
+    MatInputModule,FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

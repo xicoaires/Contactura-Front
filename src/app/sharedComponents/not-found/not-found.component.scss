@@ -1,28 +1,39 @@
-:host{
-    display: flex;
-    justify-content: center;
-}
-
-.textoErro, .textoVoltar{
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16pt;
-    line-height: 1.5;
-  }
-
-.textoVoltar a{
-  text-decoration: none;
-}
-
-.textoVoltar a:hover{
-color: #777;
-font-weight: bold;
-text-decoration: none;
-}
-
-.main-section{
+.page_404{
+  padding: 0;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.text-404{
+    background-position: center;
+
+    h2{
+      margin-bottom: -50px;
+     text-align: center;
+     font-size:40px;
+    }
+ }
+
+.link-404{
+  color: #fff!important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+  text-decoration: none;
   }
+
+  .link-404:hover{
+    background: rgb(251, 255, 0);
+    color: black!important;
+  }
+
+.text-bottom{
+  margin-top:0;
+  text-align: center;
+}

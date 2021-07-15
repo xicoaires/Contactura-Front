@@ -9,23 +9,15 @@ import { Router } from '@angular/router';
 export class NotFoundComponent implements OnInit {
 
   constructor( private router: Router) { 
-
-    let contador = 5;
-    function contar() {
-        document.getElementById('contador').innerHTML = contador;
-        contador--;
-    }
-    function redirecionar() {
-        contar();
-        if (contador == 0) {
-            document.location.href = '/login';
-        }
-    }
-    setInterval(redirecionar, 1100);
     
   }
 
   ngOnInit(): void {
+    document.querySelector('html').style.background = 'radial-gradient(circle, rgba(255,255,255,1) 54%, rgba(190,190,190,1) 100%)'; // MUDAR O BACKGROUND VIA JS
+  }
+
+  ngOnDestroy() {
+    document.querySelector('html').style.background = 'none'; // QUANDO MUDAR O BACKGROUND PELO JS, TEM QUE TER O DESTROY
   }
 
 

@@ -17,13 +17,12 @@
       width: 100%;
     }
   
-    .logo-span {
+    .container-logo {
       display: flex;
       justify-content: center;    
     
       img {
         width: 150px;
-        height: 150px;
       }
     }
   
@@ -43,9 +42,19 @@
     }
   
     /* ALINHAMENTO VERTICAL COM FLEXBOX */
+    // .section-container {
+    //   height: 100vh;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    // } 
     .section-container {
+      width: 100vw;
       height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
+      align-items: center;
     } 
+
+
+    

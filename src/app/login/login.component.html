@@ -1,19 +1,21 @@
 <section class="section-container">
   <mat-card class="example-card">
-      <mat-card-title><span class="logo-span"><img alt="Logo Contactura" src="../../assets/img/contactura_logo.png"></span></mat-card-title>
+      <mat-card-title class="container-logo">
+        <img alt="Logo da Contactura" src="../../assets/img/contactura_logo.png">
+      </mat-card-title>
     <mat-card-content>
-      <form class="example-form">
+      <form class="example-form" [formGroup]="loginForm">
               <mat-form-field class="example-full-width">
                 <mat-label>Username</mat-label>
-                <input matInput type="text" required>
+                <input matInput formControlName="username">
               </mat-form-field>
               <mat-form-field class="example-full-width">
                   <mat-label>Senha</mat-label>
-                  <input matInput type="password" required>
+                  <input type="password" matInput formControlName="password">
                 </mat-form-field>
             </form>
             <div class="container-button-enter">
-              <button mat-raised-button color="accent">Entrar</button>
+              <button (click)="login()">Entrar</button>
             </div>              
       </mat-card-content>
     </mat-card>
