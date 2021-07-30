@@ -1,1 +1,30 @@
-<p>form-usuarios works!</p>
+<app-navbar></app-navbar>
+
+<section class="container">
+    <div class="register-user">
+        <h1>Cadastrar Novo Usuário</h1>
+    </div>
+    <div class="form-users">
+        <form class="example-form">
+            <mat-form-field class="input-email">
+                <mat-label>E-mail</mat-label>
+                <input matInput type="email" required>
+              </mat-form-field>
+
+            <mat-form-field class="input-password">
+                <mat-label>Senha</mat-label>
+                <input matInput type="password" required>
+              </mat-form-field>
+
+              <mat-form-field class="input-nome">
+                <mat-label>Nome</mat-label>
+                <input matInput type="text" required>
+              </mat-form-field>
+
+              <mat-checkbox class="checkbox">Administrador?</mat-checkbox>
+          </form>
+    </div>
+    <div class="container-button">
+        <button mat-raised-button color="primary" routerLink="/lista-contatos">Salvar Usuário</button>
+    </div>
+</section> 

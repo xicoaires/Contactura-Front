@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -27,7 +28,14 @@ export class LoginComponent implements OnInit {
   login(){
     if (this.loginForm.valid){
       localStorage.setItem('token', 'coxinhanovaiorkina') //no authguard
-      this.router.navigate(['/lista-contatos']); //no app-routing
+      localStorage.setItem('admin', 'true')
+      this.router.navigate(['/lista-contatos']); //no app-routing 
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Login ou senha inválidos'
+      })
     }
   }
 }

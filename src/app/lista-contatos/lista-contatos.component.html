@@ -1,1 +1,39 @@
-<p>lista-contatos works!</p>
+<app-navbar></app-navbar>
+<!-- Título da lista de contato -->
+<section>
+    <div class="container-title">
+        <h1>CONTATOS</h1>
+    </div>
+</section>
+<!-- Botão de adicionar contato -->
+<section>
+    <div class="container-buttons">
+        <button mat-raised-button color="accent" routerLink="/cadastro-contatos">Cadastrar Contatos</button>
+        <button mat-raised-button color="primary" routerLink="/cadastro-usuarios">Cadastrar Usuário</button>
+    </div>
+</section>
+<!-- Tabela de lista de contatos -->
+<section>
+    <div>
+        <table>
+            <!-- thead -->
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Fone</th>
+                    <th>Menu</th>
+                </tr>
+            </thead>
+            <!-- tbody -->
+            <tbody>
+                <tr *ngFor="let contact of contactsList">
+                    <td data-label="Nome">{{contact.name}}</td>
+                    <td data-label="Email">{{contact.email}}</td>
+                    <td data-label="Fone">{{contact.phone}}</td>
+                    <td>Menu</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
