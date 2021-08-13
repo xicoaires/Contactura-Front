@@ -26,6 +26,15 @@
   }
 }
 
+.button_new_contact {
+  display: flex;
+  width: auto;
+}
+
+button {
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 767px) {
   .grid_container {
   display: grid;
@@ -33,4 +42,8 @@
   grid-gap: 1.5em;
   margin: 20px;
   }
+
+  .button_new_contact{
+    display: flex;
+}
 }

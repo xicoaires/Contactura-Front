@@ -1,24 +1,19 @@
-.container_title {
+.container_title{
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: center;
-    font-family: fantasy;
-    color: #0466c8;
 }
 
-
-.container_buttons {
+.container_buttons{
     float: right;
-    margin: 0px 20px 20px 0px;
+    margin: 20px 20px 20px 0;
 
-    button {
-        margin-left: 10px;
-        background-color: #0466c8;
-        color: #fff;
+    button{
+        margin-left: 15px;
     }
 }
 
-table {
+table{
     border: 1px solid #000;
     border-collapse: collapse;
     margin: 0;
@@ -27,28 +22,29 @@ table {
     table-layout: fixed;
 }
 
-
-table tr {
+table tr{
     background-color: #f8f8f8;
     border: 1px solid #ddd;
 }
-
-thead tr {
-    background-color: #e36414;
+thead tr{
+    background-color: purple;
     color: #fff;
 }
 
 table th,
-table td {
-    padding: 0.625em;
+table td{
+    padding: .625em;
     text-align: center;
 }
 
-table th {
-    font: 0.85em;
-    letter-spacing: 0.1em;
+table th{
+    font-size: .85em;
+    letter-spacing: .1em;
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 768px) {
+.container_buttons_table{
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
 }

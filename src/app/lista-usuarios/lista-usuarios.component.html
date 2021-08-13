@@ -30,10 +30,12 @@
                     <td data-label="Nome">{{user.name}}</td>
                     <td data-label="Username">{{user.username}}</td>
                     <td data-label="admin">{{user.admin}}</td>
-                    <td><div>
+                    <td>
+                        <div class="container_buttons_table">
                         <mat-icon (click)="deleteUser(user)">delete</mat-icon>
                         <mat-icon (click)="editUser(user)">edit</mat-icon>
-                    </div></td>
+                        </div>
+                    </td>
                 </tr>
             </tbody>
         </table>

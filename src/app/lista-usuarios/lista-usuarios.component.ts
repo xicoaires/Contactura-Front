@@ -37,7 +37,7 @@ export class ListaUsuariosComponent implements OnInit {
   editUser(user: User){
     console.log('edit esta funcionando', user );
     this.usuariosService.getUserList(user);
-    this.router.navigate(['/cadastro-usuario']);
+    this.router.navigate(['/cadastro-usuarios']);
   }
 
   deleteUser(user: User){

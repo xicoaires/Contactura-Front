@@ -50,4 +50,8 @@ export class FormContatosComponent implements OnInit {
       });
     }
   }
+
+  cancelar() {
+    this.router.navigate(['/lista-usuarios'])
+  }
 }
