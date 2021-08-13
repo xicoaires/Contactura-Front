@@ -1,30 +1,36 @@
 <app-navbar></app-navbar>
-
-<section class="container">
-    <div class="register-user">
-        <h1>Cadastrar Novo Usuário</h1>
+<section>
+    <div class="titulo">
+        <span> Cadastro Usuário </span>
     </div>
-    <div class="form-users">
-        <form class="example-form">
-            <mat-form-field class="input-email">
-                <mat-label>E-mail</mat-label>
-                <input matInput type="email" required>
-              </mat-form-field>
+</section>
 
-            <mat-form-field class="input-password">
-                <mat-label>Senha</mat-label>
-                <input matInput type="password" required>
-              </mat-form-field>
+<section class="formulario">
+    <form [formGroup]="formUser">
+        <div>
+            <mat-card-content>
+                <mat-form-field>
+                    <input formControlName="username" matInput placeholder="Email:" type="email">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="password" matInput placeholder="Senha:" type="password">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="name" matInput placeholder="Nome:" type="text">
+                </mat-form-field>
+                <div>
+                    <mat-checkbox>Administrador?</mat-checkbox>
+                </div>
+            </mat-card-content>
+        </div>
 
-              <mat-form-field class="input-nome">
-                <mat-label>Nome</mat-label>
-                <input matInput type="text" required>
-              </mat-form-field>
+        <div class="button_new_contact">
+            <mat-card-actions>
+                <button mat-raised-button color="primary" (click)="save()">Salvar Contato</button>
+                <button mat-raised-button color="primary" (click)="cancelar()">Cancelar</button>
+            </mat-card-actions>
+        </div>
+        
+    </form>
 
-              <mat-checkbox class="checkbox">Administrador?</mat-checkbox>
-          </form>
-    </div>
-    <div class="container-button">
-        <button mat-raised-button color="primary" routerLink="/lista-contatos">Salvar Usuário</button>
-    </div>
-</section> 
+</section>

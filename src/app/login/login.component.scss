@@ -1,60 +1,40 @@
-:host{
-    display: flex;
-    justify-content: center;
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.align_buttons_center{
+  display: flex;
+  justify-content: center;
+}
+
+.container-logo {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 150px;
   }
-  
-  .example-card {
-      max-width: 400px;
-    }
-  
-    .example-form {
-      min-width: 150px;
-      max-width: 500px;
-      width: 100%;
-    }
-    
-    .example-full-width {
-      width: 100%;
-    }
-  
-    .container-logo {
-      display: flex;
-      justify-content: center;    
-    
-      img {
-        width: 150px;
-      }
-    }
-  
-    .container-button-enter {
-      display: flex;
-      justify-content: center;
-  
-      button {
-        color: black;
-        background-color: white !important;
-      }
-    }
-  
-    .container-buttons{
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    /* ALINHAMENTO VERTICAL COM FLEXBOX */
-    // .section-container {
-    //   height: 100vh;
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    // } 
-    .section-container {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    } 
+}
 
-
-    
+.container-login {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}

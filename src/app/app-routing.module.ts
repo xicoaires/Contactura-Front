@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { pathToFileURL } from 'url';
 import { FormContatosComponent } from './form-contatos/form-contatos.component';
 import { FormUsuariosComponent } from './form-usuarios/form-usuarios.component';
 import { ListaContatosComponent } from './lista-contatos/lista-contatos.component';

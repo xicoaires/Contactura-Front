@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
         icon: 'error',
         title: 'Oops...',
         text: 'Login ou senha inválidos'
-      })
+      });
     }
   }
 }

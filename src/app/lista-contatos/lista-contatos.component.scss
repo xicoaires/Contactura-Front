@@ -1,12 +1,12 @@
-.container-title{
+.container_title{
     display: flex;
     margin-top: 10px;
     justify-content: center;
 }
 
-.container-buttons{
+.container_buttons{
     float: right;
-    margin: 0 20px 20px 0;
+    margin: 20px 20px 20px 0;
 
     button{
         margin-left: 15px;
@@ -31,7 +31,8 @@ thead tr{
     color: #fff;
 }
 
-table th, table td{
+table th,
+table td{
     padding: .625em;
     text-align: center;
 }
@@ -40,4 +41,10 @@ table th{
     font-size: .85em;
     letter-spacing: .1em;
     text-transform: uppercase;
+}
+
+.container_buttons_table{
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
 }

@@ -1,4 +1,4 @@
-<section class="section-container">
+<section class="container-login">
   <mat-card class="example-card">
       <mat-card-title class="container-logo">
         <img alt="Logo da Contactura" src="../../assets/img/contactura_logo.png">
@@ -7,16 +7,18 @@
       <form class="example-form" [formGroup]="loginForm">
               <mat-form-field class="example-full-width">
                 <mat-label>Username</mat-label>
-                <input matInput formControlName="username">
+                <input matInput type="email" formControlName="username">
               </mat-form-field>
               <mat-form-field class="example-full-width">
-                  <mat-label>Senha</mat-label>
+                  <mat-label>Password</mat-label>
                   <input type="password" matInput formControlName="password">
                 </mat-form-field>
             </form>
-            <div class="container-button-enter">
+          </mat-card-content>
+          <mat-card-content>
+            <mat-card-actions class="align_buttons_center">
               <button mat-button (click)="login()">Entrar</button>
-            </div>              
-      </mat-card-content>
+            </mat-card-actions>
+          </mat-card-content>
     </mat-card>
 </section>

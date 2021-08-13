@@ -1,1 +1,41 @@
-<p>lista-usuarios works!</p>
+<app-navbar></app-navbar>
+<section>
+    <div class="container_title">
+        <h1>USUÁRIOS</h1>
+    </div>
+</section>
+<!-- BOTÃO DE ADCIONAR CONTATO -->
+<section>
+    <div class="container_buttons">
+        <button mat-raised-button color="primary" routerLink="/cadastro-contatos">Criar Contato</button>
+        <button mat-raised-button color="primary" routerLink="/cadastro-usuarios">Criar Usuário</button>
+    </div>
+</section>
+<!-- TABELA DE LISTA DE CONTATOS -->
+<section>
+    <div>
+        <table>
+            <!-- thead -->
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">admin</th>
+                    <th>Menu</th>
+                </tr>    
+            </thead>
+            <!-- tbody -->
+            <tbody>
+                <tr *ngFor="let user of userList">
+                    <td data-label="Nome">{{user.name}}</td>
+                    <td data-label="Username">{{user.username}}</td>
+                    <td data-label="admin">{{user.admin}}</td>
+                    <td><div>
+                        <mat-icon (click)="deleteUser(user)">delete</mat-icon>
+                        <mat-icon (click)="editUser(user)">edit</mat-icon>
+                    </div></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>  

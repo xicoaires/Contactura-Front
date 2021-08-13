@@ -1,15 +1,15 @@
 <app-navbar></app-navbar>
 <!-- Título da lista de contato -->
 <section>
-    <div class="container-title">
+    <div class="container_title">
         <h1>CONTATOS</h1>
     </div>
 </section>
 <!-- Botão de adicionar contato -->
 <section>
-    <div class="container-buttons">
-        <button mat-raised-button color="accent" routerLink="/cadastro-contatos">Cadastrar Contatos</button>
-        <button mat-raised-button color="primary" routerLink="/cadastro-usuarios">Cadastrar Usuário</button>
+    <div class="container_buttons">
+        <button mat-raised-button color="primary" routerLink="/cadastro-contatos">Criar Contato</button>
+        <button mat-raised-button color="primary" routerLink="/cadastro-usuarios">Criar Usuário</button>
     </div>
 </section>
 <!-- Tabela de lista de contatos -->
@@ -31,7 +31,10 @@
                     <td data-label="Nome">{{contact.name}}</td>
                     <td data-label="Email">{{contact.email}}</td>
                     <td data-label="Fone">{{contact.phone}}</td>
-                    <td>Menu</td>
+                    <td><div class="container_buttons_table">
+                        <mat-icon (click)="deleteContacts(contact)">delete</mat-icon>
+                        <mat-icon (click)="editContatos(contact)">edit</mat-icon>
+                    </div></td>
                 </tr>
             </tbody>
         </table>

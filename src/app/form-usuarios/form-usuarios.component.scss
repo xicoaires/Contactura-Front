@@ -1,68 +1,48 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-}
-
-.register-user {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.example-form {
-  margin: 0 10px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: "email"
-    "senha"
-    "nome"
-    "checkbox";
-    align-items: center;
-}
-
-.input-email {
-  grid-area: email;
-}
-
-.input-password {
-  grid-area: senha;
-}
-
-.input-nome {
-  grid-area: nome;
-}
-
-.checkbox {
-  grid-area: checkbox;
-}
-
-.container-button {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-@media screen and (min-width: 769px) {
-  .example-form {
-    margin: 0 30px 20px 30px;
+.titulo {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 50px;
-    grid-template-areas: "email senha"
-      "nome checkbox";
-    grid-gap: 0 30px;
-  }
-
-  .container-button {
-    display: block;
-    margin-left: 30px;
-  }
-
-  .checkbox {
-    grid-area: checkbox;
-    margin: 0 12px;
+    justify-content: center;
+    padding: 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: gray;
 }
+
+mat-card-content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 45% 45%;
+
+    mat-form-field {
+        padding: 10px;
+    }
+
+    div {
+        display: grid;
+        padding: 20px 10px;
+    }
+}
+
+.button_new_contact {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template-columns: 45% 45%;
+}
+
+button {
+    margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    mat-card-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    
+.button_new_contact{
+    display: flex;
+}
+
+
 }
